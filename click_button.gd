@@ -7,7 +7,7 @@ var Game: GameManager
 func _ready():
 	Game = get_tree().get_first_node_in_group("Game")
 	# Replace text with name and cost and click and stuff
-	pass # Replace with function body.
+	pass
 
 func _on_pressed():
 	Game.click()
