@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1odxyt712hbm"]
+
+[ext_resource type="Script" path="res://idle_click_button.gd" id="1_yv5jm"]
+
+[node name="Idle Click" type="Button"]
+offset_right = 129.0
+offset_bottom = 46.0
+script = ExtResource("1_yv5jm")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

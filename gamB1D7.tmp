@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://csvvetvfj5xs0"]
+
+[ext_resource type="Script" path="res://game_manager.gd" id="1_2r614"]
+[ext_resource type="PackedScene" uid="uid://d1odxyt712hbm" path="res://click_button.tscn" id="2_p22qm"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("points_counter", "points_s_counter") groups=["Game"]]
+script = ExtResource("1_2r614")
+points_counter = NodePath("Points Counter")
+points_s_counter = NodePath("Points_s Counter")
+
+[node name="Points Counter" type="RichTextLabel" parent="."]
+offset_left = 118.0
+offset_top = 12.0
+offset_right = 286.0
+offset_bottom = 52.0
+
+[node name="Points_s Counter" type="RichTextLabel" parent="."]
+offset_left = 505.0
+offset_top = 13.0
+offset_right = 673.0
+offset_bottom = 53.0
+
+[node name="Click" parent="." instance=ExtResource("2_p22qm")]
