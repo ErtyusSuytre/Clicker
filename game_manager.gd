@@ -49,11 +49,11 @@ func set_click_power(new_click_power: int) -> bool:
 	return true
 	
 func add_click_power(diff_click_power: int) -> bool:
-	set_points(click_power + diff_click_power)
+	set_click_power(click_power + diff_click_power)
 	return true
 
 func sub_click_power(diff_click_power: int) -> bool:
-	set_points(click_power - diff_click_power)
+	set_click_power(click_power - diff_click_power)
 	return true
 
 

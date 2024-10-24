@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://d1odxyt712hbm"]
 
-[ext_resource type="Script" path="res://idle_click_button.gd" id="1_yv5jm"]
+[ext_resource type="Script" path="res://buttons/scripts/idle_click_button.gd" id="1_yv5jm"]
 
 [node name="Idle Click" type="Button"]
-offset_right = 129.0
-offset_bottom = 46.0
+offset_right = 150.0
+offset_bottom = 50.0
 script = ExtResource("1_yv5jm")
 
 [node name="Timer" type="Timer" parent="."]

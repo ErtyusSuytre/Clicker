@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqb4scpka3y38"]
 
-[ext_resource type="Script" path="res://click_button.gd" id="1_64btw"]
+[ext_resource type="Script" path="res://buttons/scripts/click_button.gd" id="1_64btw"]
 
 [node name="Click" type="Button"]
-offset_right = 129.0
-offset_bottom = 46.0
+offset_right = 150.0
+offset_bottom = 50.0
 script = ExtResource("1_64btw")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://csvvetvfj5xs0"]
+[gd_scene load_steps=5 format=3 uid="uid://csvvetvfj5xs0"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_2r614"]
-[ext_resource type="PackedScene" uid="uid://dqb4scpka3y38" path="res://click_button.tscn" id="2_p22qm"]
-[ext_resource type="PackedScene" uid="uid://d1odxyt712hbm" path="res://idle_click_button.tscn" id="3_mig52"]
+[ext_resource type="PackedScene" uid="uid://dqb4scpka3y38" path="res://buttons/click_button.tscn" id="2_p22qm"]
+[ext_resource type="PackedScene" uid="uid://d1odxyt712hbm" path="res://buttons/idle_click_button.tscn" id="3_mig52"]
+[ext_resource type="PackedScene" uid="uid://dgiybw12tfu8w" path="res://buttons/upgrade_click_button.tscn" id="4_4jijy"]
 
 [node name="Game" type="Node2D" node_paths=PackedStringArray("points_counter", "points_s_counter") groups=["Game"]]
 script = ExtResource("1_2r614")
@@ -24,15 +25,31 @@ offset_bottom = 53.0
 text = "0"
 
 [node name="Click" parent="." instance=ExtResource("2_p22qm")]
-offset_left = 80.0
-offset_top = 69.0
-offset_right = 209.0
-offset_bottom = 115.0
+offset_left = 82.0
+offset_top = 53.0
+offset_right = 232.0
+offset_bottom = 103.0
 text = "Click"
 
 [node name="Idle Click" parent="." instance=ExtResource("3_mig52")]
-offset_left = 416.0
-offset_top = 69.0
-offset_right = 545.0
-offset_bottom = 115.0
-text = "Idle Click"
+offset_left = 412.0
+offset_top = 54.0
+offset_right = 562.0
+offset_bottom = 104.0
+text = "Idle Click +1"
+
+[node name="Idle Click2" parent="." instance=ExtResource("3_mig52")]
+offset_left = 415.0
+offset_top = 137.0
+offset_right = 565.0
+offset_bottom = 187.0
+text = "Fuck me"
+cost = 100
+points_s = 5
+
+[node name="Upgrade Click" parent="." instance=ExtResource("4_4jijy")]
+offset_left = 85.0
+offset_top = 143.0
+offset_right = 235.0
+offset_bottom = 193.0
+text = "Click Power +1"
